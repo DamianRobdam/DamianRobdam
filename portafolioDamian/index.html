@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Damián Calderón – QA Engineer | Bogotá, Colombia</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Damián Calderón – QA Engineer especialista en aseguramiento de calidad de software. Pruebas funcionales, API testing, Postman, Jira. Bogotá, Colombia."/>
+  <meta name="keywords" content="QA Engineer, Quality Assurance, Tester, Bogotá, Colombia, Damián Calderón, pruebas software, Postman, Jira, Scrum"/>
+  <meta name="author" content="Damián Calderón"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Damián Calderón – QA Engineer"/>
+  <meta property="og:description" content="Especialista en aseguramiento de calidad de software. Encuentro los bugs antes que tus usuarios."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="img/perfilDamian.jpeg"/>
+  <meta property="og:locale" content="es_CO"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Damián Calderón – QA Engineer"/>
+  <meta name="twitter:description" content="Especialista en aseguramiento de calidad de software en Bogotá, Colombia."/>
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a84ff'/><text y='.9em' font-size='52' font-family='system-ui,sans-serif' font-weight='700' fill='white' x='50%' text-anchor='middle' dy='0.1em'>DC</text></svg>"/>
+
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">DC <span>·</span> QA</div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#habilidades" onclick="closeMenu()">Habilidades</a></li>
+      <li><a href="#experiencia" onclick="closeMenu()">Experiencia</a></li>
+      <li><a href="#educacion" onclick="closeMenu()">Educación</a></li>
+      <li><a href="#certificaciones" onclick="closeMenu()">Certificaciones</a></li>
+      <li><a href="#proceso" onclick="closeMenu()">Proceso</a></li>
+      <li><a href="#proyectos" onclick="closeMenu()">Proyectos</a></li>
+      <li><a href="#idiomas" onclick="closeMenu()">Idiomas</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeBtn" title="Cambiar tema">☀️</button>
+      <a href="Damian_Calderon_CV.pdf" download="Damian_Calderon_CV.pdf" class="nav-cv" title="Descargar hoja de vida">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        CV
+      </a>
+      <a href="#contacto" class="nav-cta" onclick="closeMenu()">Contactar</a>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- FLOATING CODE SNIPPETS -->
+    <div class="code-float code-float-1">
+      <div class="cf-dots"><div class="cf-dot cf-dot-red"></div><div class="cf-dot cf-dot-yellow"></div><div class="cf-dot cf-dot-green"></div></div>
+      <pre><span class="cf-comment">// Test: login exitoso</span>
+<span class="cf-key">it</span>(<span class="cf-str">&#39;should login&#39;</span>, () <span class="cf-key">=&gt;</span> {
+  cy.<span class="cf-fn">get</span>(<span class="cf-str">&#39;#email&#39;</span>).<span class="cf-fn">type</span>(user)
+  cy.<span class="cf-fn">get</span>(<span class="cf-str">&#39;#pass&#39;</span>).<span class="cf-fn">type</span>(pass)
+  cy.<span class="cf-fn">url</span>().<span class="cf-fn">should</span>(<span class="cf-str">&#39;include&#39;</span>,<span class="cf-str">&#39;/home&#39;</span>)
+})</pre>
+    </div>
+
+    <div class="code-float code-float-2">
+      <div class="cf-dots"><div class="cf-dot cf-dot-red"></div><div class="cf-dot cf-dot-yellow"></div><div class="cf-dot cf-dot-green"></div></div>
+      <pre><span class="cf-comment">// API: status check</span>
+<span class="cf-key">expect</span>(response.status)
+  .<span class="cf-fn">toBe</span>(<span class="cf-num">200</span>)
+<span class="cf-key">expect</span>(body.data)
+  .<span class="cf-fn">not</span>.<span class="cf-fn">toBeNull</span>()</pre>
+    </div>
+
+    <div class="hero-badge"><span class="pulse"></span> Disponible para proyectos QA</div>
+
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring2"></div>
+      <div class="avatar-img">
+        <img src="img/perfilDamian.jpeg" alt="Damián Calderón"
+             onerror="this.style.display='none'; this.parentElement.innerHTML += initials()"/>
+      </div>
+      <div class="avatar-badge-qa">QA</div>
+    </div>
+
+    <h1>
+      <div class="name">Damián Calderón</div>
+      <div class="title-grad" id="typed-title">QA Engineer<span class="cursor-blink"></span></div>
+    </h1>
+    <p class="hero-sub">Especialista en aseguramiento de calidad de software. Encuentro los bugs antes que tus usuarios, garantizando productos robustos y confiables.</p>
+
+    <div class="hero-btns">
+      <a href="#proyectos" class="btn btn-blue">Ver proyectos</a>
+      <a href="#contacto" class="btn btn-outline">Hablemos</a>
+      <a href="Damian_Calderon_CV.pdf" download="Damian_Calderon_CV.pdf" class="btn btn-cv">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Descargar CV
+      </a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-n" style="color:var(--accent);" id="s1">0+</div><div class="stat-l">Bugs reportados</div></div>
+      <div class="stat"><div class="stat-n" style="color:var(--green);" id="s2">0%</div><div class="stat-l">Cobertura de pruebas</div></div>
+      <div class="stat"><div class="stat-n" style="color:var(--orange);" id="s3">0+</div><div class="stat-l">Proyectos probados</div></div>
+      <div class="stat"><div class="stat-n" style="color:var(--purple);" id="s4">0+</div><div class="stat-l">Años de experiencia</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- HABILIDADES -->
+  <section class="section" id="habilidades">
+    <div class="sec-tag reveal">Stack QA</div>
+    <h2 class="sec-title reveal delay-1">Habilidades &amp; herramientas</h2>
+    <p class="sec-sub reveal delay-2">Dominio de las principales herramientas del ciclo de pruebas, desde la planificación hasta el reporte de defectos.</p>
+    <div class="bento">
+      <div class="bento-card wide reveal delay-1">
+        <div class="bc-icon" style="background:rgba(10,132,255,0.15);">🧪</div>
+        <div class="bc-title">Pruebas funcionales</div>
+        <div class="bc-desc">Diseño y ejecución de casos de prueba funcionales, de regresión, smoke y sanity testing con enfoque en calidad continua.</div>
+        <div class="skill-pills">
+          <span class="pill pill-blue">Casos de prueba</span>
+          <span class="pill pill-blue">Regresión</span>
+          <span class="pill pill-blue">Smoke testing</span>
+          <span class="pill pill-blue">Sanity testing</span>
+          <span class="pill pill-blue">Pruebas manuales</span>
+          <span class="pill pill-blue">Pruebas exploratorias</span>
+        </div>
+      </div>
+      <div class="bento-card reveal delay-2">
+        <div class="bc-icon" style="background:rgba(48,209,88,0.15);">🤖</div>
+        <div class="bc-title">Automatización</div>
+        <div class="bc-desc">Diseño de scripts de prueba automatizados para flujos críticos de negocio.</div>
+        <div class="skill-pills">
+          <span class="pill pill-green">Selenium</span>
+          <span class="pill pill-green">Cypress</span>
+          <span class="pill pill-green">Playwright</span>
+        </div>
+      </div>
+      <div class="bento-card reveal delay-1">
+        <div class="bc-icon" style="background:rgba(255,159,10,0.15);">🔗</div>
+        <div class="bc-title">API Testing</div>
+        <div class="bc-desc">Validación de endpoints REST, contratos de API y pruebas de integración.</div>
+        <div class="skill-pills">
+          <span class="pill pill-orange">Postman</span>
+          <span class="pill pill-orange">REST API</span>
+          <span class="pill pill-orange">JSON</span>
+        </div>
+      </div>
+      <div class="bento-card reveal delay-2">
+        <div class="bc-icon" style="background:rgba(191,90,242,0.15);">📋</div>
+        <div class="bc-title">Gestión de bugs</div>
+        <div class="bc-desc">Reporte detallado de defectos, seguimiento y trazabilidad con el equipo de desarrollo.</div>
+        <div class="skill-pills">
+          <span class="pill pill-purple">Jira</span>
+          <span class="pill pill-purple">Trello</span>
+          <span class="pill pill-purple">GitHub</span>
+          <span class="pill pill-purple">Confluence</span>
+        </div>
+      </div>
+      <div class="bento-card reveal delay-3">
+        <div class="bc-icon" style="background:rgba(255,69,58,0.15);">📊</div>
+        <div class="bc-title">Nivel de habilidades</div>
+        <div class="bc-desc">Autoevaluación actualizada 2025.</div>
+        <div class="skill-bar">
+          <div class="sb-row"><span>Pruebas manuales</span><span>90%</span></div>
+          <div class="sb-track"><div class="sb-fill bar-anim" data-w="90" style="background:var(--accent);"></div></div>
+        </div>
+        <div class="skill-bar" style="margin-top:10px;">
+          <div class="sb-row"><span>API Testing</span><span>80%</span></div>
+          <div class="sb-track"><div class="sb-fill bar-anim" data-w="80" style="background:var(--green);"></div></div>
+        </div>
+        <div class="skill-bar" style="margin-top:10px;">
+          <div class="sb-row"><span>Gestión de bugs</span><span>85%</span></div>
+          <div class="sb-track"><div class="sb-fill bar-anim" data-w="85" style="background:var(--orange);"></div></div>
+        </div>
+        <div class="skill-bar" style="margin-top:10px;">
+          <div class="sb-row"><span>Automatización</span><span>60%</span></div>
+          <div class="sb-track"><div class="sb-fill bar-anim" data-w="60" style="background:var(--purple);"></div></div>
+        </div>
+      </div>
+      <div class="bento-card reveal delay-4">
+        <div class="bc-icon" style="background:rgba(48,209,88,0.15);">🔄</div>
+        <div class="bc-title">Metodologías</div>
+        <div class="bc-desc">Entornos ágiles con enfoque en calidad continua y mejora de procesos.</div>
+        <div class="skill-pills">
+          <span class="pill pill-green">Scrum</span>
+          <span class="pill pill-green">Agile</span>
+          <span class="pill pill-green">Kanban</span>
+          <span class="pill pill-green">SDLC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCIA -->
+  <section class="section" id="experiencia">
+    <div class="sec-tag reveal">Trayectoria</div>
+    <h2 class="sec-title reveal delay-1">Experiencia</h2>
+    <p class="sec-sub reveal delay-2">Historial profesional enfocado en la calidad del software y la mejora continua.</p>
+    <div class="exp-list">
+
+      <div class="exp-card reveal delay-1">
+        <div class="exp-line"></div>
+        <div class="exp-top">
+          <div>
+            <div class="exp-co">
+              <a href="https://www.linkedin.com/company/2480681/" target="_blank" style="color:inherit;text-decoration:none;">Soft One Group S.A.S</a>
+            </div>
+            <div class="exp-role" style="color:var(--muted);font-size:12px;">7 años 10 meses · Bogotá, Colombia · Presencial</div>
+          </div>
+          <div class="exp-date">2018 – Presente</div>
+        </div>
+
+        <div style="border-left:1.5px solid var(--border2);margin-left:6px;padding-left:18px;margin-top:18px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px;">
+            <div>
+              <div style="font-size:15px;font-weight:600;color:var(--text);">Desarrollador Junior / QA Engineer</div>
+              <div style="font-size:12px;color:var(--accent);margin-top:2px;">Jornada completa · Presencial</div>
+            </div>
+            <div class="exp-date">ene. 2023 – actualidad · 3 años 5 meses</div>
+          </div>
+          <div class="exp-desc">Desarrollo front-end y participación activa en el ciclo de vida del software. Aseguramiento de calidad, documentación de casos de prueba, ejecución de pruebas funcionales y de regresión, reporte de defectos en Jira y mejora continua de procesos internos. Colaboración directa con el equipo de desarrollo bajo metodologías ágiles Scrum.</div>
+          <div class="exp-tags" style="margin-top:12px;">
+            <span class="pill pill-blue">HTML/CSS</span>
+            <span class="pill pill-blue">Front-end</span>
+            <span class="pill pill-blue">QA Manual</span>
+            <span class="pill pill-orange">Postman</span>
+            <span class="pill pill-green">GitHub</span>
+            <span class="pill pill-green">Jira</span>
+            <span class="pill pill-purple">Scrum</span>
+          </div>
+        </div>
+
+        <div style="border-left:1.5px solid var(--border2);margin-left:6px;padding-left:18px;margin-top:18px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px;">
+            <div>
+              <div style="font-size:15px;font-weight:600;color:var(--text);">Analista de Sistemas</div>
+              <div style="font-size:12px;color:var(--green);margin-top:2px;">Jornada completa</div>
+            </div>
+            <div class="exp-date">ago. 2018 – dic. 2022 · 4 años 5 meses</div>
+          </div>
+          <div class="exp-desc">Análisis y documentación de sistemas de información. Levantamiento de requerimientos funcionales, pruebas de software y soporte a usuarios internos. Coordinación entre áreas de negocio y desarrollo para garantizar calidad en las entregas.</div>
+          <div class="exp-tags" style="margin-top:12px;">
+            <span class="pill pill-blue">Análisis de sistemas</span>
+            <span class="pill pill-blue">Requerimientos</span>
+            <span class="pill pill-orange">Front-end</span>
+            <span class="pill pill-purple">Documentación</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card reveal delay-2">
+        <div class="exp-line" style="background:linear-gradient(180deg,var(--orange),var(--green));"></div>
+        <div class="exp-top">
+          <div>
+            <div class="exp-co">Claro Colombia</div>
+            <div class="exp-role">Servicio al cliente · Bogotá, Colombia</div>
+          </div>
+          <div class="exp-date">jun. 2016 – jul. 2018 · 2 años 2 meses</div>
+        </div>
+        <div class="exp-desc">Atención y soporte a clientes en productos de telecomunicaciones. Gestión de casos, resolución de incidencias y seguimiento postventa en uno de los principales operadores del país.</div>
+        <div class="exp-tags">
+          <span class="pill pill-orange">Servicio al cliente</span>
+          <span class="pill pill-orange">Telecomunicaciones</span>
+          <span class="pill pill-green">Soporte</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal delay-3">
+        <div class="exp-line" style="background:linear-gradient(180deg,var(--purple),var(--accent));"></div>
+        <div class="exp-top">
+          <div>
+            <div class="exp-co">ETB</div>
+            <div class="exp-role">Servicio al cliente · Bogotá, Colombia</div>
+          </div>
+          <div class="exp-date">ene. 2013 – may. 2016 · 3 años 5 meses</div>
+        </div>
+        <div class="exp-desc">Atención al cliente en servicios de telecomunicaciones e internet. Gestión de solicitudes, resolución de fallas técnicas y acompañamiento al usuario en la Empresa de Telecomunicaciones de Bogotá.</div>
+        <div class="exp-tags">
+          <span class="pill pill-purple">Servicio al cliente</span>
+          <span class="pill pill-purple">Telecomunicaciones</span>
+          <span class="pill pill-blue">Soporte técnico</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CERTIFICACIONES -->
+  <section class="section" id="certificaciones">
+    <div class="sec-tag reveal">Formación continua</div>
+    <h2 class="sec-title reveal delay-1">Licencias &amp; certificaciones</h2>
+    <p class="sec-sub reveal delay-2">Aprendizaje constante para mantenerse a la vanguardia de la tecnología y la calidad del software.</p>
+    <div class="cert-grid">
+
+      <div class="cert-card reveal delay-1">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(10,132,255,0.12);">🤖</div>
+          <div class="cert-badge cert-badge-blue">may. 2026</div>
+        </div>
+        <div class="cert-title">Claude AI desde Cero: Tu Primer Paso en la IA [2026]</div>
+        <div class="cert-issuer">Udemy</div>
+        <div class="cert-desc">Conceptos básicos hasta funciones avanzadas como Projects, Artifacts y técnicas de prompting. Comparaciones con ChatGPT y Gemini.</div>
+        <div class="cert-footer">
+          <span class="pill pill-blue">IA Generativa</span>
+          <span class="pill pill-blue">Prompting</span>
+          <a href="https://ude.my/UC-f41e367d-61cb-4798-b5d9-2df6077c734b" target="_blank" class="cert-link">Ver credencial ↗</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal delay-2">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(48,209,88,0.12);">🧪</div>
+          <div class="cert-badge cert-badge-green">dic. 2025</div>
+        </div>
+        <div class="cert-title">Software Testing desde 0: MasterClass todo en 1 (2025)</div>
+        <div class="cert-issuer">Udemy</div>
+        <div class="cert-desc">Formación integral en testing de software desde fundamentos hasta técnicas avanzadas de aseguramiento de calidad.</div>
+        <div class="cert-footer">
+          <span class="pill pill-green">QA</span>
+          <span class="pill pill-green">Testing</span>
+          <span class="pill pill-green">Ingeniería QA</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal delay-3">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(255,159,10,0.12);">🌐</div>
+          <div class="cert-badge cert-badge-orange">sept. 2025</div>
+        </div>
+        <div class="cert-title">Liferay Portal Gestión de Contenidos y Administración</div>
+        <div class="cert-issuer">Udemy</div>
+        <div class="cert-desc">Gestión y administración de portales empresariales con Liferay, incluyendo gestión de contenidos y configuración de plataformas.</div>
+        <div class="cert-footer">
+          <span class="pill pill-orange">Liferay</span>
+          <span class="pill pill-orange">CMS</span>
+          <a href="https://www.udemy.com/certificate/UC-92d4bfc3-a6f5-4dbd-a233-85f245f3abb6/" target="_blank" class="cert-link">Ver credencial ↗</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal delay-1">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(191,90,242,0.12);">💻</div>
+          <div class="cert-badge cert-badge-purple">abr. 2023</div>
+        </div>
+        <div class="cert-title">Introducción a la Programación Web</div>
+        <div class="cert-issuer">CUN – Corporación Unificada Nacional</div>
+        <div class="cert-desc">Fundamentos de programación web y desarrollo de aplicaciones orientadas al usuario.</div>
+        <div class="cert-footer">
+          <span class="pill pill-purple">HTML</span>
+          <span class="pill pill-purple">Programación web</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal delay-2">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(48,209,88,0.12);">🏅</div>
+          <div class="cert-badge cert-badge-green">ago. 2020</div>
+        </div>
+        <div class="cert-title">Scrum Foundation Professional Certificate (SFPC)</div>
+        <div class="cert-issuer">CertiProf</div>
+        <div class="cert-desc">Certificación en fundamentos de Scrum y metodologías ágiles para la gestión de proyectos de software.</div>
+        <div class="cert-footer">
+          <span class="pill pill-green">Scrum</span>
+          <span class="pill pill-green">Agile</span>
+          <a href="https://www.youracclaim.com/badges/5c1b47fa-78a7-4aab-a845-b530060bb8e7" target="_blank" class="cert-link">Ver credencial ↗</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal delay-3">
+        <div class="cert-top">
+          <div class="cert-icon" style="background:rgba(10,132,255,0.12);">☕</div>
+          <div class="cert-badge cert-badge-blue">ago. 2020</div>
+        </div>
+        <div class="cert-title">Angular con un café</div>
+        <div class="cert-issuer">LinkedIn Learning</div>
+        <div class="cert-desc">Introducción práctica al framework Angular para el desarrollo de aplicaciones web modernas.</div>
+        <div class="cert-footer">
+          <span class="pill pill-blue">Angular</span>
+          <span class="pill pill-blue">Front-end</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCACIÓN -->
+  <section class="section" id="educacion">
+    <div class="sec-tag reveal">Formación académica</div>
+    <h2 class="sec-title reveal delay-1">Educación</h2>
+    <p class="sec-sub reveal delay-2">Base académica que sustenta mi desarrollo profesional en tecnología y sistemas.</p>
+    <div class="edu-card reveal delay-1">
+      <div class="edu-left">
+        <div class="edu-icon">🎓</div>
+      </div>
+      <div class="edu-body">
+        <div class="edu-top">
+          <div>
+            <div class="edu-institution">Corporación Unificada Nacional de Educación Superior — CUN</div>
+            <div class="edu-degree">Ingeniero de Sistemas · Systems Engineering</div>
+          </div>
+          <div class="exp-date">ago. 2018 – jun. 2023</div>
+        </div>
+        <div class="edu-desc">Formación integral en ingeniería de sistemas con enfoque en desarrollo de software, análisis de sistemas, bases de datos y metodologías de gestión de proyectos tecnológicos.</div>
+        <div class="exp-tags" style="margin-top:14px;">
+          <span class="pill pill-blue">Ingeniería de Sistemas</span>
+          <span class="pill pill-blue">Desarrollo de Software</span>
+          <span class="pill pill-green">Bases de Datos</span>
+          <span class="pill pill-purple">Análisis de Sistemas</span>
+          <span class="pill pill-orange">Gestión de Proyectos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="sec-tag reveal">Metodología</div>
+    <h2 class="sec-title reveal delay-1">Mi proceso QA</h2>
+    <p class="sec-sub reveal delay-2">Un enfoque estructurado para garantizar la calidad en cada etapa del ciclo de vida del software.</p>
+    <div class="process-grid">
+      <div class="process-card reveal delay-1"><div class="process-num">01</div><div class="process-icon">📝</div><div class="process-title">Planificación</div><div class="process-desc">Análisis de requerimientos, definición del alcance y estrategia de pruebas.</div></div>
+      <div class="process-card reveal delay-2"><div class="process-num">02</div><div class="process-icon">🗂️</div><div class="process-title">Diseño de casos</div><div class="process-desc">Casos de prueba detallados con criterios de aceptación claros.</div></div>
+      <div class="process-card reveal delay-3"><div class="process-num">03</div><div class="process-icon">🔍</div><div class="process-title">Ejecución</div><div class="process-desc">Pruebas funcionales, exploratorias, de regresión y API testing.</div></div>
+      <div class="process-card reveal delay-4"><div class="process-num">04</div><div class="process-icon">🐛</div><div class="process-title">Reporte</div><div class="process-desc">Defectos documentados con pasos reproducibles, severidad e impacto.</div></div>
+      <div class="process-card reveal delay-5"><div class="process-num">05</div><div class="process-icon">✅</div><div class="process-title">Verificación</div><div class="process-desc">Validación de correcciones y confirmación de estabilidad del sistema.</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <div class="sec-tag reveal">Portafolio</div>
+    <h2 class="sec-title reveal delay-1">Proyectos</h2>
+    <p class="sec-sub reveal delay-2">Casos donde la calidad marcó la diferencia.</p>
+    <div class="proj-grid">
+      <div class="proj-card reveal delay-1">
+        <div class="proj-header"><div class="proj-emoji">🏦</div><span class="pill pill-green" style="font-size:11px;padding:4px 10px;">Completado</span></div>
+        <div class="proj-title">Portal financiero – Soft One Group</div>
+        <div class="proj-desc">Ciclo completo de pruebas funcionales y de regresión para un portal de gestión financiera. Se documentaron más de 80 casos de prueba, se identificaron 34 bugs críticos antes del release y se logró cobertura del 90% en flujos principales.</div>
+        <div class="proj-footer"><span class="pill pill-blue">QA Manual</span><span class="pill pill-orange">Jira</span><span class="pill pill-purple">Confluence</span></div>
+      </div>
+      <div class="proj-card reveal delay-2">
+        <div class="proj-header"><div class="proj-emoji">🔗</div><span class="pill pill-green" style="font-size:11px;padding:4px 10px;">Completado</span></div>
+        <div class="proj-title">API REST – Integración de servicios</div>
+        <div class="proj-desc">Validación de endpoints REST para integración entre sistemas internos. Colecciones Postman con más de 50 requests automatizados, validación de contratos, pruebas de carga básica y verificación de respuestas de error.</div>
+        <div class="proj-footer"><span class="pill pill-orange">Postman</span><span class="pill pill-green">API REST</span><span class="pill pill-blue">JSON</span></div>
+      </div>
+      <div class="proj-card reveal delay-3" style="opacity:.6;border-style:dashed;">
+        <div class="proj-header"><div class="proj-emoji">🚀</div><span class="pill pill-purple" style="font-size:11px;padding:4px 10px;">Próximo</span></div>
+        <div class="proj-title">Tu próximo proyecto</div>
+        <div class="proj-desc">¿Necesitas un QA en tu equipo? Estoy disponible para proyectos de cualquier tamaño.</div>
+        <div class="proj-footer"><span class="pill pill-purple">Disponible</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- IDIOMAS -->
+  <section class="section" id="idiomas">
+    <div class="sec-tag reveal">Comunicación</div>
+    <h2 class="sec-title reveal delay-1">Idiomas</h2>
+    <p class="sec-sub reveal delay-2">Capacidad de trabajar y comunicarse en entornos locales e internacionales.</p>
+    <div class="lang-grid">
+      <div class="lang-card reveal delay-1">
+        <div class="lang-flag">🇨🇴</div>
+        <div class="lang-info">
+          <div class="lang-name">Español</div>
+          <div class="lang-level">Nativo</div>
+        </div>
+        <div class="lang-bars">
+          <div class="lang-bar-fill" style="width:100%;background:var(--accent);"></div>
+        </div>
+        <div class="lang-tag"><span class="pill pill-blue">C2 – Nativo</span></div>
+      </div>
+      <div class="lang-card reveal delay-2">
+        <div class="lang-flag">🇺🇸</div>
+        <div class="lang-info">
+          <div class="lang-name">Inglés</div>
+          <div class="lang-level">Básico – Lectura técnica</div>
+        </div>
+        <div class="lang-bars">
+          <div class="lang-bar-fill" style="width:35%;background:var(--green);"></div>
+        </div>
+        <div class="lang-tag"><span class="pill pill-green">A2 – Básico</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TESTIMONIOS -->
+  <section class="section" id="testimonios">
+    <div class="sec-tag reveal">Referencias</div>
+    <h2 class="sec-title reveal delay-1">Testimonios</h2>
+    <p class="sec-sub reveal delay-2">Lo que dicen quienes han trabajado conmigo.</p>
+    <div class="testi-grid">
+      <div class="testi-card reveal delay-1">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">Damián tiene una capacidad excepcional para encontrar bugs en escenarios que nadie más consideraría. Su meticulosidad en la documentación de casos de prueba ha sido clave para mejorar la calidad de nuestros releases.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">JR</div>
+          <div>
+            <div class="testi-name">Jefe de proyecto</div>
+            <div class="testi-role">Soft One Group S.A.S</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-2">
+        <div class="testi-quote">"</div>
+        <div class="testi-text">Trabajar con Damián en el equipo de QA fue muy valioso. Su conocimiento de pruebas funcionales y de API nos permitió lanzar con confianza, reduciendo los bugs en producción significativamente.</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,var(--green),var(--accent));">LM</div>
+          <div>
+            <div class="testi-name">Líder técnico</div>
+            <div class="testi-role">Soft One Group S.A.S</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="contact-wrap reveal">
+      <div class="contact-orb"></div>
+      <h2>¿Hablamos? 👋</h2>
+      <p>¿Necesitas un QA Engineer en tu equipo? Escríbeme y conversamos.</p>
+      <div class="contact-links">
+        <a href="mailto:rcalderonavila@gmail.com" class="c-link primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          rcalderonavila@gmail.com
+        </a>
+        <a href="https://wa.me/573123575092" class="c-link wa" target="_blank">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/robinson-damián-calderón-ávila-6a754516a/" class="c-link" target="_blank">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <div class="contact-form-wrap">
+        <h3 style="font-size:18px;font-weight:600;margin-bottom:6px;">Envíame un mensaje</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;">Te respondo en menos de 24 horas</p>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Tu nombre" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" placeholder="¿En qué te puedo ayudar?" required/>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;" id="submitBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar mensaje
+          </button>
+          <div id="formMsg" style="display:none;margin-top:12px;padding:12px;border-radius:12px;font-size:13px;text-align:center;"></div>
+        </form>
+      </div>
+
+      <!-- TARJETA DIGITAL -->
+      <div class="accordion-divider"></div>
+      <div class="accordion-wrap" id="digitalCard">
+        <button class="accordion-header" id="accordionBtn" onclick="toggleAccordion()" aria-expanded="false">
+          <div class="accordion-header-left">
+            <div class="accordion-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <div class="accordion-title">Tarjeta digital</div>
+              <div class="accordion-subtitle">Toca para ver el QR y guardar mi contacto</div>
+            </div>
+          </div>
+          <div class="accordion-header-right">
+            <div class="accordion-pills-preview">
+              <span class="acc-chip">📧 Email</span>
+              <span class="acc-chip">📱 Tel</span>
+              <span class="acc-chip">🔗 LinkedIn</span>
+            </div>
+            <div class="accordion-chevron" id="accChevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+        </button>
+
+        <div class="accordion-body" id="accordionBody">
+          <div class="accordion-inner">
+            <div class="mc-info-col">
+              <div class="acc-profile-row">
+                <div class="acc-avatar">
+                  <img src="img/perfilDamian.jpeg" alt="Damián"
+                       onerror="this.style.display='none'; this.parentElement.innerHTML+='<span>DC</span>'"/>
+                </div>
+                <div>
+                  <div class="acc-name">Damián Calderón</div>
+                  <div class="acc-role">QA Engineer · Soft One Group S.A.S</div>
+                  <div class="acc-avail"><span class="pulse"></span> Disponible</div>
+                </div>
+              </div>
+              <div class="mc-section-label" style="margin-top:16px;">Contacto</div>
+              <a href="mailto:rcalderonavila@gmail.com" class="mc-row">
+                <div class="mc-row-icon" style="background:#eef4ff;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a4fa0" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+                <div class="mc-row-content"><div class="mc-row-label">Email</div><div class="mc-row-value">rcalderonavila@gmail.com</div></div>
+              </a>
+              <a href="tel:+573123575092" class="mc-row">
+                <div class="mc-row-icon" style="background:#efffef;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a7a3a" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5.09 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L9 10.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div class="mc-row-content"><div class="mc-row-label">Teléfono</div><div class="mc-row-value">+57 312 357 5092</div></div>
+              </a>
+              <a href="https://wa.me/573123575092" target="_blank" class="mc-row">
+                <div class="mc-row-icon" style="background:#f0fff4;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+                <div class="mc-row-content"><div class="mc-row-label">WhatsApp</div><div class="mc-row-value">+57 312 357 5092</div></div>
+              </a>
+              <a href="https://www.linkedin.com/in/robinson-damián-calderón-ávila-6a754516a/" target="_blank" class="mc-row">
+                <div class="mc-row-icon" style="background:#e8f0fb;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+                <div class="mc-row-content"><div class="mc-row-label">LinkedIn</div><div class="mc-row-value">Ver perfil ↗</div></div>
+              </a>
+            </div>
+            <div class="mc-qr-col">
+              <div class="mc-section-label" style="text-align:center;">Escanear contacto</div>
+              <div class="mc-qr-box"><div id="qrcode"></div></div>
+              <div class="mc-qr-hint">Abre la cámara y apunta al QR para guardar el contacto</div>
+              <button onclick="downloadVCard()" class="mc-save-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Guardar contacto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Diseñado por <span>Damián Calderón</span> · QA Engineer · 2026</footer>
+
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Ir al inicio">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
