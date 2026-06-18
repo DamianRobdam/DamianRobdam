@@ -1,9 +1,0 @@
-portafolio-robinson/
-├── index.html          ← Página principal
-├── css/
-│   └── styles.css      ← Todos los estilos
-├── js/
-│   └── main.js         ← Todas las animaciones y lógica
-├── img/
-│   └── avatar.jpg      ← Aquí va tu foto (reemplazar)
-└── README.md           ← Instrucciones
